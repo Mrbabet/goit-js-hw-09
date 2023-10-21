@@ -32,6 +32,7 @@ class CountdownTimer {
           this.selectedDate = null;
         } else {
           Notiflix.Notify.success('Valid date');
+          this.refs.startBtn.removeAttribute('disabled');
         }
       },
     };
