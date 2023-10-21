@@ -28,6 +28,7 @@ class CountdownTimer {
           Notiflix.Notify.failure(
             'Please choose a date and time in the future'
           );
+          this.refs.startBtn.setAttribute('disabled', 'disabled');
           this.selectedDate = null;
         } else {
           Notiflix.Notify.success('Valid date');
